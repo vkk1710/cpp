@@ -5,10 +5,10 @@ using namespace std;
 double fib(vector<int> v, int n){
     if(n>=2){
         if(v[n-1]==-1)
-            v[n-1] = fib(v,n-1);
+            v[n-1] = fib(v,n-1);   // updating the -1 values with fibonacci terms at resp. positions
         if(v[n-2]==-1)
-            v[n-2] = fib(v,n-2);
-        return v[n-1] + v[n-2];
+            v[n-2] = fib(v,n-2);   // updating the -1 values with fibonacci terms at resp. positions
+        return v[n-1] + v[n-2];    
     }
     else
         return n;
